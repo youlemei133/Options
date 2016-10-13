@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mTextColor" format="color"/>
+    <attr name="mTextSize" format="dimension"/>
+
+    <declare-styleable name="LoaderImageView">
+        <attr name="loadingView" format="reference"/>
+        <attr name="failedView" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MutiplyFormatLayout">
+        <attr name="mTextColor" />
+        <attr name="mTextSize" />
+        <attr name="textMultSpace" format="float"/>
+
+        <attr name="imageLoadingView" format="reference"/>
+        <attr name="imageFailedView" format="reference"/>
+        <attr name="imageMinHeight" format="dimension"/>
+        <attr name="imageScaleType" format="enum">
+            <enum name="CENTER_INSIDE" value="7"/>
+            <enum name="CENTER_CROP" value="6"/>
+            <enum name="CENTER" value="5"/>
+            <enum name="FIT_END" value="4"/>
+            <enum name="FIT_CENTER" value="3"/>
+            <enum name="FIT_START" value="2"/>
+            <enum name="FIT_XY" value="1"/>
+            <enum name="MATRIX" value="0"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="OptionCircleView">
+        <attr name="text" format="string"/>
+        <attr name="mTextColor" />
+        <attr name="mTextSize" />
+        <attr name="circleRadius" format="dimension"/>
+        <attr name="outCircleColor" format="color"/>
+        <attr name="rightOptionBackgroundColor" format="color"/>
+        <attr name="rightOptionImageResource" format="reference"/>
+        <attr name="wrongOptionBackgroundColor" format="color"/>
+        <attr name="wrongOptionImageResource" format="reference"/>
+
+        <attr name="selectedOptionBackgroundColor" format="color"/>
+        <attr name="selectedOptionTextColor" format="color"/>
+
+        <attr name="optionStatus" format="enum">
+            <enum name="OPTION_BASE" value="0"/>
+            <enum name="OPTION_SELECTED" value="1"/>
+            <enum name="OPTION_RIGHT" value="2"/>
+            <enum name="OPTION_WRONG" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>
